@@ -1,0 +1,52 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Version control
+.git
+.gitignore
+.github
+
+# Build outputs
+dist
+build
+.next
+out
+
+# Development
+.env.local
+.env.*.local
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+.manus-logs
+logs
+*.log
+
+# Cache
+.cache
+.eslintcache
+.prettier-ignore
+
+# Testing
+coverage
+.nyc_output
+
+# Misc
+README.md
+CONTRIBUTING.md
+DEVELOPMENT.md
+DEPLOYMENT.md
+LICENSE
+.prettierignore
+.prettierrc
+components.json
+ideas.md
+patches

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algarve Seasons</title>
+    <script>
+        // GitHub Pages SPA redirect hack
+        // This file handles 404s by redirecting to index.html with the original path
+        // The index.html will then use client-side routing to display the correct page
+        
+        const path = window.location.pathname;
+        const segments = path.split('/').filter(Boolean);
+        
+        // Redirect to index.html with the original path preserved in the URL
+        // This allows the React app to handle routing
+        if (segments.length > 0 && segments[0] === 'AlgarveSeasons') {
+            // Remove the repo name and redirect
+            const newPath = '/' + segments.slice(1).join('/');
+            window.location.replace('/AlgarveSeasons/#' + newPath);
+        } else {
+            // Fallback redirect
+            window.location.replace('/AlgarveSeasons/');
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>

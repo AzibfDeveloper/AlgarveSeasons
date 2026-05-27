@@ -12,7 +12,7 @@ export default function Home() {
   const [, setLocation] = useLocation();
 
   const handleContactClick = () => {
-    setLocation('/contact');
+    window.open('https://algarvehvac-db7seyek.manus.space/#/quote-request', '_blank');
   };
 
   const handleServicesClick = () => {

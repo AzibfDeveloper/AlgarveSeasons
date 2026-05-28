@@ -153,8 +153,8 @@ function vitePluginManusDebugCollector(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
-  // GitHub Pages base path - required for subdirectory deployment
-  base: process.env.GITHUB_PAGES ? '/AlgarveSeasons/' : '/',
+  // Base path for deployment
+  base: '/',
   plugins,
   resolve: {
     alias: {

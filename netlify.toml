@@ -1,11 +1,11 @@
 # Netlify configuration for Algarve Seasons
 
 [build]
-  # Build command
-  command = "pnpm build"
+  # Build command - only build frontend (no server needed for static hosting)
+  command = "pnpm vite build"
   
-  # Directory to publish
-  publish = "dist"
+  # Directory to publish - Vite outputs to dist/public
+  publish = "dist/public"
   
   # Node version
   node_version = "20"
@@ -44,13 +44,13 @@
 
 # Gzip compression
 [context.production]
-  command = "pnpm build"
-  publish = "dist"
+  command = "pnpm vite build"
+  publish = "dist/public"
 
 [context.deploy-preview]
-  command = "pnpm build"
-  publish = "dist"
+  command = "pnpm vite build"
+  publish = "dist/public"
 
 [context.branch-deploy]
-  command = "pnpm build"
-  publish = "dist"
+  command = "pnpm vite build"
+  publish = "dist/public"
